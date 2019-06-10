@@ -1,5 +1,6 @@
 package com.example.practise
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
@@ -33,9 +34,17 @@ class MainActivity : AppCompatActivity() {
         siteName = findViewById(R.id.siteNameEntry)
         reportedBy = findViewById(R.id.reportedByEntry)
 
+        switchToCamera.setOnClickListener {
+            val cameraIntent = Intent(this, CameraUpload::class.java )
+            startActivity(cameraIntent)
+        }
+
+
         addBtn.setOnClickListener{
             saveFRF()
         }
+
+
 
         ref.addValueEventListener(object: ValueEventListener{
             override fun onCancelled(p0: DatabaseError) {
