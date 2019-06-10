@@ -22,7 +22,7 @@
             android:id="@+id/uploadBtn" app:layout_constraintStart_toEndOf="@+id/cameraBtn"
             app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="32dp" android:layout_marginStart="8dp"
-            app:layout_constraintBottom_toBottomOf="@+id/cameraBtn" android:onClick="uploadBtnClicked"/>
+            app:layout_constraintBottom_toBottomOf="@+id/cameraBtn"/>
     <Button
             android:text="Take Photo"
             android:layout_width="0dp"
